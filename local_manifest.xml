@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+        <!-- Remotes -->
+
+        <remote name="iusmac"
+                fetch="https://github.com/iusmac"
+                clone-depth="1" />
+
+        <remote name="anandhan_github"
+                fetch="https://github.com/anandhan07/"
+                clone-depth="1" />
+
+        <remote name="rom-builder"
+                fetch="https://github.com/rom-builder/"
+                clone-depth="1" />
+                
+        <remote name="GrapheneOS"
+            fetch="https://github.com/GrapheneOS/" />
+
+        <remote name="CrDroid"
+            fetch="https://github.com/crdroidandroid/" />
+
+        <remote name="ChimeOSS"
+            fetch="https://gitlab.com/chimeoss/ />
+
+        <!-- Trees -->
+        <project path="device/xiaomi/chime" name="android_device_xiaomi_chime" remote="CrDroid"
+                revision="12.1" />
+        <project path="vendor/xiaomi/chime" name="vendor_xiaomi_chime" remote="ChimeOSS"
+                revision="pixelexperience-13.0" />
+        <project path="kernel/xiaomi/vince" name="kernel_xiaomi_chime" remote="chimeOSS" 
+                revision="lineage-19.1" />
+
+        <!-- Clang -->
+        <project path="prebuilts/clang/host/linux-x86/clang-aosp" name="aosp-clang"
+                remote="anandhan_gitlab" revision="17" />
+                
+        <!-- External -->
+        <project path="external/Camera" name="platform_external_Camera" remote="GrapheneOS" revision="13" />
+
+        <!-- RevampedFMRadio -->
+        <project path="packages/apps/RevampedFMRadio" name="RevampedFMRadio" remote="iusmac"
+                revision="qcom" />
+
+</manifest>
